@@ -58,7 +58,7 @@ Our data collection pipeline followed the steps detailed below:
 ## How to generalize the given code for any other manipulators
 - Modify DH_params variable in ```DH_v2.py``` inside scripts folder depending on the manipulator
 - Modify the joints variable in the above file with the joints relevant to the manipulator
-- Modify the functions ```world_coords_tf```,  ```image_pixels```, ```kp_gens``` in the script ```kp_detection_full.py``` following way
+- Modify the functions ```world_coords_tf```,  ```image_pixels```, ```kp_gen``` in the script ```kp_detection_full.py``` following way
     - ```world_coords_tf``` returns the positions and orientations(poses) of each joint in the world frame. In this code **p_j0....p_jn** defines the poses for each joint and can be modified on the basis of manipulator
     - ```image_pixels``` return the pixel position of each joint in image space. In this code the variables **image_pix0....image_pixn** defines the pixel positions and can be modified on the number of joints depending on manipulators
     - ```kp_gen``` uses the output from ```image_pixels``` and ```world_coords_tf```, hence need to be modified accordingly

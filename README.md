@@ -1,5 +1,5 @@
 # KPDataGenerator
-This repository details the process of identifying keypoints on different joint locatoion on a robot body and collecting data accordingly. The codes represent data collection process for Franka arm which can be further generalized for other manipulators.
+This repository details the process of identifying keypoints on different joint locatoions on a robot body and collecting data accordingly. The codes represent data collection process for Franka arm which can be further generalized for other manipulators.
 
 ## Pre-requisites 
 - 1. We assume that the user of this repo will have a manipulator and camera with respective ROS wrappers. 

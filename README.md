@@ -11,7 +11,7 @@ This repository details the process of identifying keypoints on different joint 
 Our data collection pipeline followed the steps detailed below:
 - 1. We run DREAM pipeline "https://github.com/NVlabs/DREAM#installation" to capture the Camera Extrinsics for a certain camera pose
 - 2. In the main function for script "kp_detection_full.py" we have variables 'tvec' and 'quat'. We assign the Camera Extrinsics that is the translational component of the Camera World Pose to 'tvec' and rotational component to 'quat'. 
-- 3. We have a launch file "dream_depth_ds_gen_full.launch" with the scripts "kp_detection_full.py". This launch file also includes the launch file for relasense2_Camra which we used for our data collection. 
+- 3. We have a launch file "dream_depth_ds_gen_full.launch" with the scripts "kp_detection_full.py". This launch file also includes the launch file for realsense2_camera which we used for our data collection. 
 - 4. We also have a script "franka_vel_pub_test.py", for moving the Franka arm to arbitrary locations in the launch file  
 - 5. Start the controller for Franka and connect the camera
 - 6. Run the following command to run the entire pipeline:-

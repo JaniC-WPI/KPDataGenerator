@@ -1,0 +1,3 @@
+data_root_dir: /home/jc-merlab/lama/my_dataset
+out_root_dir: /home/jc-merlab/lama/experiments
+tb_dir: /home/jc-merlab/lama/tb_logs
